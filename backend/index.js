@@ -1,9 +1,10 @@
 const express = require ('express')
 const app = express()
+const PORT = 1000;
 const cors = require('cors');
 const Auth = require('./routes/auth.js')
 const atten = require('./routes/attendencerout.js');
-const PORT = 1000;
+
 const path = require("path");
 require("./conne/db.js")
 app.use(cors());
